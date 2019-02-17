@@ -35,11 +35,10 @@ e=>end: 结束(推流成功)
 st->op->e
 ```
 ## 流程（摄像头操作）
-```flow
-st=>start: 开始(成功推流)
-op=>operation: POST{"camera":"camera1","command":{"code":23,"operation":1}}
-e=>end: 结束(操作完成)
-st->op->e
+```mermaid
+graph TD
+start[开始(成功推流)]-->operation[POST{"camera":"camera1","command":{"code":23,"operation":1}}]
+operation-->end[结束(操作完成)]
 ```
 ## 调用说明
 - 在启动正确启动项目后，项目会监听本地12346端口（Service.java文件内，可更改）
