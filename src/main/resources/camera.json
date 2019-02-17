@@ -1,0 +1,11 @@
+{
+	"camera1":{
+		"ip": "127.0.0.1",
+		"port":8000,
+		"user":"admin",
+		"pwd":"12345",
+		"channel":1,
+		"linkmode":0,
+		"rtmp":"rtmp://127.0.0.1:1935/hls/stream"
+	}
+}
